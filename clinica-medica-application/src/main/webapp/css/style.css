@@ -1,0 +1,172 @@
+/* Estilos básicos para os menus e submenus */
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: #f1f1f1;
+}
+
+ul.menu ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+
+ul.menu ul li {
+    display: block;
+    background-color: #f9f9f9;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+ul.menu ul li:hover {
+    background-color: #ddd;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="text"], input[type="date"]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.obrigatorio-mensagem{
+    color : red;
+    size: 0.8em;
+    margin-top:0;
+    text-align:right;
+}
+
+ .obrigatorio:before{
+        color : red;
+        size: 0.8em;
+        content: "* ";
+ }
+
+.ERRO {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.SUCESSO {
+    color: green;
+    margin-bottom: 20px;
+}
+
+.moldura-mensagem-erro {
+    padding: 10px;
+    border: 1px solid #b3abab;
+    margin: 30px;
+    background-color: #ede8e8;
+}
+
+/* Defina a cor de fundo e a cor do texto */
+a.button {
+  background-color: #007bff;
+  color: #fff;
+  /* Adicione mais estilos para deixar o botão com a aparência desejada */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Mude a cor do botão quando o usuário passar o mouse por cima */
+a.button:hover {
+  background-color: #0069d9;
+  color: #fff;
+}
+
+/* Mude a cor do botão quando o usuário clicar nele */
+a.button:active {
+  background-color: #005cbf;
+  color: #fff;
+}
+
+.container {
+      width: 80%;
+      margin: 0 auto;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+span {
+  font-size: 16px;
+}
